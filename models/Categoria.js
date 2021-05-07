@@ -14,5 +14,7 @@ var CategoriaSchema = new mongoose.Schema(
      fechaCreacion: this.fechaCreacion
     };
   };
+
+  //comentario
   
 mongoose.model('Categoria', CategoriaSchema)
