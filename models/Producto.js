@@ -6,7 +6,7 @@ var ProductoSchema = new mongoose.Schema(
     sku: { type: String, required: true },
     descripcion: { type: String, required: true },
     fotos: [String],
-    precio: { type: Number, required: true },
+    price: { type: Number, required: true },
     categoria: { type: mongoose.Schema.Types.ObjectId, ref: 'Categoria'}, // contacto con la persona que anuncia al animalito
     tipoProducto: { type: String, enum: ["simple", "variable"] },
     peso: { type: Number, required: true },
@@ -26,7 +26,7 @@ var ProductoSchema = new mongoose.Schema(
      nombre: this.nombre,
      sku: this.sku,
      descripcion: this.descripcion,
-     precio: this.precio,
+     price: this.price,
      fotos: this.fotos,
      noExistencias: this.noExistencias,
      comentarios: this.comentarios,
